@@ -1,11 +1,10 @@
-let clickDisplay = document.querySelector('.click-count');
-let clicks = 0;
 
-let catButton = document.querySelector('.cat');
+let catButtons = document.querySelectorAll('.cat');
 
-function catClick() {
-    clicks++;
-    clickDisplay.innerHTML = clicks;
+function catClick(e) {
+    let parent = e.target.parentElement.parentElement;
+    let clickDisplay = parent.querySelector('.click-count');
+    clickDisplay.innerHTML = +clickDisplay.innerHTML + 1;
 }
 
-catButton.addEventListener('click', catClick);
+catButtons.forEach(b => b.addEventListener('click', catClick));

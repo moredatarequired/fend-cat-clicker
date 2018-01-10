@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Cat Clicker</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/app.js" defer></script>
-    </head>
-    <body>
-        <header></header>
-        <nav></nav>
-        <main>
-            <h1>Click the Cat</h1>
-            <h2><span class="click-count">0</span> clicks</h2>
-            <button class="cat">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cat Clicker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <h1>Click a Cat (duel!)</h1>
+        <div class="arena">
+            <section class="cat-box">
+                <h2>
+                    <span class="cat-name">Claus</span>
+                    <span class="click-count">0</span> clicks</h2>
+                <button class="cat">
                     <!-- <img src="http://thecatapi.com/api/images/get?size=small&type=jpg"> -->
                     <img src="img/joy.jpg" alt="Cat in Christmas stocking">
-            </button>
-        </main>
-        <footer></footer>
-    </body>
+                </button>
+            </section>
+
+            <section class="cat-box">
+                <h2>
+                    <span class="cat-name">Lucky</span>
+                    <span class="click-count">0</span> clicks</h2>
+                <button class="cat">
+                    <!-- <img src="http://thecatapi.com/api/images/get?size=small&type=jpg"> -->
+                    <img src="img/ladder.jpg" alt="Cat in Christmas stocking">
+                </button>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
 </html>

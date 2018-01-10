@@ -4,3 +4,10 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.arena {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-around;
+}
