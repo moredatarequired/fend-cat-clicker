@@ -1,13 +1,76 @@
-main {
+body {
     display: flex;
     flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 12vh;
+}
+
+main {
+    display: flex;
+}
+
+.cat-selector {
+    border: 3px solid gray;
+}
+
+.sidebar-cat {
+    margin: 0rem;
+    max-height: calc(88vh / 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+
+.sidebar-cat img {
+    max-width: 12rem;
+}
+
+.sidebar-cat figcaption {
+    font-size: 1.6rem;
+    margin-top: -2rem;
+    text-shadow: 0rem 0rem 0.4rem white;
+}
+
+.cats {
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.play-area {
+    flex-grow: 4;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.arena {
+figure {
+    margin: 0px;
+    max-height: 60vh;
+    max-width: 60vw;
     display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: pointer;
+    border: 6px solid lightgoldenrodyellow;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figure figcaption {
+    font-size: 3.2rem;
+    margin-top: -4rem;
+    text-shadow: 0rem 0rem 0.4rem white;
 }

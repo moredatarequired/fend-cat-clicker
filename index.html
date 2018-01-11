@@ -4,38 +4,24 @@
 <head>
     <meta charset="utf-8">
     <title>Cat Clicker</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js" defer></script>
 </head>
 
 <body>
-    <header></header>
-    <nav></nav>
+    <header>
+        <h1>Click a Cat!</h1>
+    </header>
     <main>
-        <h1>Click a Cat (duel!)</h1>
-        <div class="arena">
-            <section class="cat-box">
-                <h2>
-                    <span class="cat-name">Claus</span>
-                    <span class="click-count">0</span> clicks</h2>
-                <button class="cat">
-                    <!-- <img src="http://thecatapi.com/api/images/get?size=small&type=jpg"> -->
-                    <img src="img/joy.jpg" alt="Cat in Christmas stocking">
-                </button>
-            </section>
-
-            <section class="cat-box">
-                <h2>
-                    <span class="cat-name">Lucky</span>
-                    <span class="click-count">0</span> clicks</h2>
-                <button class="cat">
-                    <!-- <img src="http://thecatapi.com/api/images/get?size=small&type=jpg"> -->
-                    <img src="img/ladder.jpg" alt="Cat in Christmas stocking">
-                </button>
-            </section>
-        </div>
+        <aside class="cat-selector">
+            <ul class="cats">
+            </ul>
+        </aside>
+        <section class="play-area">
+            <div class="placeholder"></div>
+        </section>
     </main>
-    <footer></footer>
 </body>
 
 </html>
